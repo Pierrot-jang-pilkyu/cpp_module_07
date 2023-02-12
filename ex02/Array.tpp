@@ -14,7 +14,7 @@ Array<T>::Array(void)
 }
 
 template <typename T>
-Array<T>::Array(std::size_t &n)
+Array<T>::Array(const std::size_t &n)
 {
 	if (n == 0)
 	{

@@ -11,7 +11,7 @@ private:
 
 public:
 	Array(void);
-	Array(std::size_t &n);
+	Array(const std::size_t &n);
 	Array(const Array &obj);
 	Array	&operator=(const Array &obj);
 	~Array(void);

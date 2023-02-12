@@ -41,7 +41,7 @@ int main(void)
 		Array<int> d(n);
 		d[-1];
 	}
-	catch(const Array<int>::BadAccessException& e)
+	catch(const std::exception& e)
 	{
 		std::cerr << e.what() << '\n';
 	}
@@ -50,7 +50,7 @@ int main(void)
 		Array<int> e(n);
 		e[1000];
 	}
-	catch(const Array<int>::BadAccessException& e)
+	catch(const std::exception& e)
 	{
 		std::cerr << e.what() << '\n';
 	}

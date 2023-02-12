@@ -10,6 +10,13 @@ void	iter(T *arr, std::size_t arr_len, void (*f)(T&))
 }
 
 template <typename T>
+void	iter(T *arr, std::size_t arr_len, void (*f)(const T&))
+{
+	for (std::size_t i = 0; i < arr_len; ++i)
+		f(arr[i]);
+}
+
+template <typename T>
 void	printT(T &str)
 {
 	std::cout << str << std::endl;
